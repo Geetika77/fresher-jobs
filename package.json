@@ -1,0 +1,28 @@
+{
+  "name": "fresher-jobs-india",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "refresh": "node src/refresh.js",
+    "tag": "node src/tag.js",
+    "export": "node src/export.js",
+    "build:footer": "esbuild footer/main.tsx --bundle --minify --format=iife --jsx=automatic --define:process.env.NODE_ENV='\"production\"' --outfile=public/doodle-footer.js",
+    "build:hero": "esbuild hero/main.tsx --bundle --minify --format=iife --jsx=automatic --define:process.env.NODE_ENV='\"production\"' --outfile=public/cinematic-hero.js",
+    "build": "npm run build:footer && npm run build:hero"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "gsap": "^3.12.5",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2"
+  }
+}

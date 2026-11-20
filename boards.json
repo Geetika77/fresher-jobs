@@ -1,0 +1,15 @@
+{
+  "greenhouse": [
+    "stripe",
+    "mongodb"
+  ],
+  "lever": [
+    "paytm"
+  ],
+  "ashby": [],
+  "workable": [],
+  "smartrecruiters": [
+    "unacademy",
+    "swiggy"
+  ]
+}
